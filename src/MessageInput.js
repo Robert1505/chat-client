@@ -8,7 +8,7 @@ const NewMessage = ({ socket }) => {
   const submitForm = (e) => {
     e.preventDefault();
     socket.emit("message", {
-      message: value,
+      value: value,
       username: username
     });
     setValue("");
